@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:hint="Name"
             android:inputType="textCapWords"
+            style="@style/CustomText"
             android:text="Customer Name"/>
 
         <EditText
@@ -31,7 +32,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Toppings"
+            style="@style/CustomText"
+            android:text="@string/toppings"
             android:textAllCaps="true" />
 
         <android.support.v7.widget.AppCompatCheckBox
@@ -54,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            style="@style/CustomText"
             android:text="Quantity"
             android:textAllCaps="true" />
 
@@ -94,6 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            style="@style/CustomText"
             android:text="Order Summary"
             android:textAllCaps="true" />
 

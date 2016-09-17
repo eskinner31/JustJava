@@ -77,12 +77,6 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText("" + number);
     }
 
-//
-//    private void displayMessage(String message) {
-//        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-//        orderSummaryTextView.setText(message);
-//    }
-
     /**
      * This method is called when the order button is clicked.
      * @param  addWhippedCream is whether or not the user wants whipped cream.
@@ -104,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String createOrderSummary(int price, boolean hasCream, boolean hasChocolate, String customerName) {
-        String name = customerName;
+        String name = getString(R.string.order_summary_name, customerName); //(target, valueToReplaceXliff%s)
         int quantity = value;
         int total = price;
 
@@ -114,6 +108,6 @@ public class MainActivity extends AppCompatActivity {
                 "\n Add Chocolate? " + hasChocolate +
                  "\n Quantity: " + value +
                 "\n Total: $" + price +
-                "\n Thank You!";
+                "\n" + getString(R.string.thank_you);
     }
 }
